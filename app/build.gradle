@@ -30,5 +30,6 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.4.1'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.4.2'
 
+    // refer https://github.com/chrisbanes/PhotoView
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
 }
