@@ -1,14 +1,15 @@
 package me.haxzie.imagezoomer;
 
 import android.app.Application;
+import android.util.Log;
 
-import com.github.piasy.biv.BigImageViewer;
-import com.github.piasy.biv.loader.glide.GlideImageLoader;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideBuilder;
 
 public class ImageZoomer extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        GlideImageLoader.with(getApplicationContext());
+        Glide.init(getApplicationContext(), new GlideBuilder().setLogLevel(Log.VERBOSE));
     }
 }

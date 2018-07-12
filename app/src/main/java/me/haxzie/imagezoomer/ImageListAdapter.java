@@ -1,9 +1,7 @@
 package me.haxzie.imagezoomer;
 
-import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.content.Context;
-import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
@@ -66,7 +64,6 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.Imag
         public ImageHolder(View itemView) {
             super(itemView);
             image = itemView.findViewById(R.id.image);
-
         }
 
     }
